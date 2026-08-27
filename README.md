@@ -8,15 +8,8 @@ For example, when `n = 7`, the program generates a matrix where the outer layer 
 
 For `n = 7`, the output looks like:
 
-```text
-7 7 7 7 7 7 7
-7 6 6 6 6 6 7
-7 6 5 5 5 6 7
-7 6 5 4 5 6 7
-7 6 5 5 5 6 7
-7 6 6 6 6 6 7
-7 7 7 7 7 7 7
-```
+<img width="274" height="267" alt="image" src="https://github.com/user-attachments/assets/00fa2305-0dc9-409e-90e5-adff89eefdae" />
+
 
 ## 🛠️ Technologies Used
 
