@@ -20,66 +20,22 @@ For `n = 7`, the output looks like:
 
 ## 🛠️ Technologies Used
 
-* **NumPy**
+* Python
+* NumPy
 
 ## 📋 Requirements
 
-Before running the program, make sure you have:
+The project requires:
 
 * NumPy
 
-You can check whether Python is installed by running:
-
-```bash
-python --version
-```
-
-or, on some systems:
-
-```bash
-python3 --version
-```
-
-## ⚙️ Installation
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/concentric-matrix-generator.git
-```
-
-Replace `your-username` with your GitHub username.
-
-### 2. Move into the project folder
-
-```bash
-cd concentric-matrix-generator
-```
-
-### 3. Install NumPy
-
-```bash
-pip install numpy
-```
-
-If your system uses `pip3`, use:
-
-```bash
-pip3 install numpy
-```
 
 ## ▶️ How to Run
 
-Run the Python file using:
+Run the main Python file:
 
 ```bash
 python matrix.py
-```
-
-or:
-
-```bash
-python3 matrix.py
 ```
 
 The program will ask you to enter a value for `n`.
@@ -90,20 +46,20 @@ Example:
 Enter the value of n: 7
 ```
 
-The corresponding concentric matrix will then be displayed.
+The corresponding concentric number matrix will then be displayed.
 
 ## 💡 How It Works
 
 The program first creates an `n × n` matrix using NumPy.
 
-Each position in the matrix is checked to find its distance from the four edges:
+For every position in the matrix, it checks its distance from the four edges:
 
 * Top
 * Left
 * Bottom
 * Right
 
-The closest edge determines which layer the position belongs to.
+The closest edge determines which layer that position belongs to.
 
 For example, in a `7 × 7` matrix:
 
@@ -114,47 +70,43 @@ For example, in a `7 × 7` matrix:
 
 This process is repeated for every position in the matrix.
 
-## 🧩 Code Structure
+## 🧩 Project Structure
 
 ```text
 concentric-matrix-generator/
 │
-├── matrix.py
+├── Matrix pattern generation.py
 ├── README.md
-└── requirements.txt
 ```
 
-### `matrix.py`
+### `Matrix pattern generation.py`
 
-Contains the main Python program that takes the user's input and generates the matrix.
+Contains the main program that takes user input and generates the concentric number matrix.
 
 ### `README.md`
 
-Contains the project information, setup instructions, and explanation.
+Contains the project description, installation instructions, usage, and other information.
 
-### `requirements.txt`
-
-Contains the Python packages required to run the project.
 
 ## 📦 Dependencies
 
-The project only requires one external Python library:
+The project uses:
 
 ```text
 numpy
 ```
 
-The dependency can also be installed using:
+To install it manually:
 
 ```bash
-pip install -r requirements.txt
+pip install numpy
 ```
 
 ## 🚫 Input Validation
 
 The program checks whether the entered value is a positive integer.
 
-If the user enters `0` or a negative number, the program displays a message asking for a positive value instead of trying to create an invalid matrix.
+If the user enters `0` or a negative number, the program displays a message asking for a positive value instead of creating an invalid matrix.
 
 ## 🎯 Purpose
 
@@ -166,4 +118,4 @@ This project was created as a simple exercise to practice:
 * Matrix manipulation
 * Basic problem-solving
 
-It is a small project, but it helped me understand how a mathematical pattern can be converted into a program.
+It demonstrates how a mathematical pattern can be turned into a working program using Python and NumPy.
